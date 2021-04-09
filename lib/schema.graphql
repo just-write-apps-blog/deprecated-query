@@ -1,0 +1,16 @@
+type Query {
+	oldQuery(input: OldInputType): Result! @deprecated(reason: "Use the newQuery")
+  newQuery(input: NewInputType): Result!
+}
+
+type Result {
+  value: String!
+}
+
+input OldInputType {
+  someValue: String
+}
+
+input NewInputType {
+  someId: ID
+}

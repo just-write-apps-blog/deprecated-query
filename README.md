@@ -1,14 +1,14 @@
-# Welcome to your CDK TypeScript project!
+# Deprecating AppSync Queries
 
-This is a blank project for TypeScript development with CDK.
+This is a companion project to the blog post [Deprecating AppSync Queries](https://justwriteapps.com/deprecating-appsync-queries).
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+To deploy the project, make sure you have the AWS CDK setup on your system--instructions can be found here: https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html
 
-## Useful commands
+Then it's pretty standard:
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+```bash
+npm i
+npm run deploy
+```
+
+After the CDK finishes deploying, you'll see a list of outputs that includes the api key and url to use for testing.
