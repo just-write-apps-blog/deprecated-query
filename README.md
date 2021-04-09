@@ -12,3 +12,13 @@ npm run deploy
 ```
 
 After the CDK finishes deploying, you'll see a list of outputs that includes the api key and url to use for testing.
+
+## Cleanup
+
+When you're done experimenting, run the following command
+
+```bash
+npm run cdk destroy
+```
+
+This will remove all resources so you don't get charged for anything!
